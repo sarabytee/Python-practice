@@ -4,6 +4,7 @@ BASE_URL = "https://api.exchangeratesapi.io/"
 
 API_KEY = "a30e893e82ca422f4298ead804db0cc6"
 
+# method to ask user what currency they want to convert to and from
 def convert_currency():
     start = input("What currency would you like to convert from?: ----> (currency code, e.g. USD) ").strip().upper()
     end = input("What currency would you like to convert it to?: ----> (currency code, e.g. EUR) ").strip().upper()
@@ -17,7 +18,7 @@ def convert_currency():
     converted_amount = amount * rates[end]
     print(f"\n{amount} {start} is equal to {converted_amount} {end}\n")
 
-
+# method to ask user for a currency rate in a specified date in history
 def historical_rate():
     date = input("Enter the date you’d like rates for (YYYY‑MM‑DD): ")
     base = input("Select a base currency: ----> (currency code, e.g. GBP) ").strip().upper()
