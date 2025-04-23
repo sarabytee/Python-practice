@@ -2,7 +2,7 @@ import requests
 
 BASE_URL = "https://api.exchangeratesapi.io/"
 
-API_KEY = "a30e893e82ca422f4298ead804db0cc6"
+API_KEY = "a30e893e82ca422f4298ead804db0cc7"
 
 # method to ask user what currency they want to convert to and from
 def convert_currency():
